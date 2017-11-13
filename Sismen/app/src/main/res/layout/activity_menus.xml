@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.silver23.sismen.MenusActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="Gestión de Menus"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etNom"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/etFech"
+                android:layout_alignStart="@+id/etFech"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etDetalle"
+                android:layout_width="338dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/etNom"
+                android:layout_alignStart="@+id/etNom"
+                android:layout_below="@+id/etNom"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Detalle"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etFech"
+                android:layout_width="338dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/etDetalle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Fecha AAAA-MM-DD"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/bSerch"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignEnd="@+id/etDetalle"
+                android:layout_alignRight="@+id/etDetalle"
+                android:layout_alignTop="@+id/etNom"
+                android:background="@color/colorPrimaryDark"
+                android:text="Buscar"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/bSave"
+                android:layout_width="338dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/etFech"
+                android:layout_alignStart="@+id/etFech"
+                android:layout_below="@+id/etFech"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Guardar"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/bActualizar"
+                android:layout_width="338dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/bSave"
+                android:layout_alignStart="@+id/bSave"
+                android:layout_below="@+id/bSave"
+                android:layout_marginTop="17dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Actualizar"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/bEliminar"
+                android:layout_width="338dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/bActualizar"
+                android:layout_alignStart="@+id/bActualizar"
+                android:layout_below="@+id/bActualizar"
+                android:layout_marginTop="19dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Eliminar"
+                android:textColor="@android:color/background_light" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

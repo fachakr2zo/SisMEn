@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.silver23.sismen.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="Iniciar Sesión"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etPass"
+            android:layout_alignStart="@+id/etPass"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="Usuario"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/bIniciar"
+            android:layout_width="338dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/etPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Iniciar"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAyuda"
+            android:layout_alignBottom="@+id/tvAyuda"
+            android:layout_alignLeft="@+id/bIniciar"
+            android:layout_alignStart="@+id/bIniciar"
+            android:text="¿Olvidaste tus datos de inicio de sesión?" />
+
+        <TextView
+            android:id="@+id/tvAyuda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bIniciar"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="Obtén ayuda"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <ImageView
+            android:id="@+id/imaFace"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/avmailing"
+            tools:layout_editor_absoluteX="199dp"
+            tools:layout_editor_absoluteY="316dp" />
+
+        <TextView
+            android:id="@+id/tvRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:text="Registrate!"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvRegistrar"
+            android:layout_centerHorizontal="true"
+            android:text="¿Aún no estas registrado?" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bIniciar"
+            android:layout_alignStart="@+id/bIniciar"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
